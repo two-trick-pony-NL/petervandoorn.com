@@ -83,8 +83,6 @@ async function getInputValue(){
     createCode("<hr><br>Growthtribe", "<br>2 day course on growth strategies and conversion optimalisation <br><br>#GrowthTribe");
     createCode("<hr><br>Keerzeven.nl", "<br>Freelance Design, hosting and implementation of a landing page for Keerzeven.nl. Check it out: <a href='https://keerzeven.nl<br><br>#Wordpress");
     createCode("<hr><br>Lovely Workout", "<br>Analysis of visitor behaviour, popular links, bounce rates, user engagement and conversion funnels. Improving marketing campaign performance and improving leads by collecting user analytics across the website and landing pages.<br><br> #matomo #wordpress #microsoftclarity");
-    createCode("<hr><br>Hey mate", "<br>Analysis of visitor behaviour, popular links, bounce rates, user engagement and conversion funnels. Improving marketing campaign performance and improving leads by collecting user analytics across the website and landing pages.<br><br> #matomo #wordpress #microsoftclarity");
-    createCode("<hr><br>Go Teambuilding", "<br>Analysis of visitor behaviour, popular links, bounce rates, user engagement and conversion funnels. Improving marketing campaign performance and improving leads by collecting user analytics across the website and landing pages.<br><br> #matomo #wordpress #microsoftclarity");
     createCode("<hr><br>Lucevankempen.com", "<br>Hosting webpage and email<br><br> #wordpress");
     createText("<hr><br><a href='https://github.com/two-trick-pony-NL' target='_blank'> Some of these projects have been documented on my Github, check it out: <i class='fab fa-github white'></i> https://github.com/two-trick-pony-NL</a>")
   }
