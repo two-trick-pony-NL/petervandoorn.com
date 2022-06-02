@@ -47,8 +47,8 @@ body{
   display:flex;
   flex-direction: column;
   width:100%;
-  max-width:800px;
-  height:500px;
+  max-width:1000px;
+  height:800px;
   overflow: hidden;
   border-radius: 6px;
   border: 1px solid gray;

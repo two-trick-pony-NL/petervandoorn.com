@@ -21,17 +21,11 @@ app.addEventListener("click", function(event){
 
 
 async function open_terminal(){
-  createText("Welcome");
+  createText("Welcome to petervandoorn.com");
   await delay(700);
-  createText("Starting the server...");
-  await delay(1500);
-  createText("You can run several commands:");
- 
-  createCode("about me", "Who am i and what do i do.");
-  createCode("all", "See all commands.");
-  createCode("social -a", "All my social networks.");
+  createText("");
+  await delay(1000);
 
-  await delay(500);
   new_line();
 }
 
@@ -42,9 +36,9 @@ function new_line(){
   const span1 = document.createElement("span");
   const span2 = document.createElement("span");
   p.setAttribute("class", "path")
-  p.textContent = "# user";
-  span1.textContent = " in";
-  span2.textContent = " ~/heber-leonard";
+  p.textContent = "visitor@petervandoorn.com";
+  span1.textContent = " ~ ";
+  span2.textContent = "   $";
   p.appendChild(span1);
   p.appendChild(span2);
   app.appendChild(p);
@@ -68,42 +62,76 @@ function removeInput(){
 async function getInputValue(){
   
   const value = document.querySelector("input").value;
-  if(value === "all"){
+  if(value === "help"){
     trueValue(value);
-    
-    createCode("projects", "My github page with my projects. Follow me there ;)");
-    createCode("about me", "Who am i and what do i do.");
-    createCode("social -a", "All my social networks.");
-    createCode("clear", "Clean the terminal.");
+    createText("Hey! It's OK to ask for help, here are the commands that you can use:");
+    createCode("projects", "My latest projects");
+    createCode("about", "Me, in a nutshell");
+    createCode("contact", "Get in touch with me");
+    createCode("clear", "Clean up the terminal");
     
   }
   else if(value === "projects"){
     trueValue(value);
-    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
+    createText("Here are my most recent projects")
+    createCode("<hr><br>FranklyApp", "A custom built feedback collection platform written in Python <br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn #TwilioAPI");
+    createCode("<hr><br>InstaRecipe", "InstaRecipe serves 12.000 recipes instantly. This was a portfolio project to keep up with modern webdevelopment. Instarecipe <br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn #TwilioAPI");
+    createCode("<hr><br>bunq", "Various projects, from KYC/EDD automation, slashing time required to open a bank account to near-instant. To new product launches including iDin, Instant Payments, Zapier and OCR Receipt scanner in the bunq app.<br><br>#AWS #NativeApp #Fintech #unicorn#asknicely #Kibana #mixpanel");
+    createCode("<hr><br>Cybersprint", "Redesign and implementation a brand new user interface for the Cybersecurity platform. While rebuilding the platform proper Scrum and Agile methodology were implemented, increasing the velocity by as much as 30%. <br><br> #Vue.js #Django");
+    createCode("<hr><br>Friss", "Leading a multidisciplinary team tasked to overhaul the Friss Fraud Detection platform. Unifying look, feel and functionality across the board while updating systems to use the latest technologies.<br><br>#Matomo #Azure #Elastic Vue.js");
+    createCode("<hr><br>Corinahorstman.nl", "Freelance project designing and building a landing page for Psychotherapist Corina Horstman. <br><br>#Wordpress");
+    createCode("<hr><br>Growthtribe", "2 day course on growth strategies and conversion optimalisation <br><br>#GrowthTribe");
+    createCode("<hr><br>Keerzeven.nl", "Freelance Design, hosting and implementation of a landing page for Keerzeven.nl.<br><br>#Wordpress");
+    createCode("<hr><br>Lovely Workout", "Analysis of visitor behaviour, popular links, bounce rates, user engagement and conversion funnels. Improving marketing campaign performance and improving leads by collecting user analytics across the website and landing pages.<br><br> #matomo #wordpress #microsoftclarity");
+    createCode("<hr><br>Hey mate", "Analysis of visitor behaviour, popular links, bounce rates, user engagement and conversion funnels. Improving marketing campaign performance and improving leads by collecting user analytics across the website and landing pages.<br><br> #matomo #wordpress #microsoftclarity");
+    createCode("<hr><br>Go Teambuilding", "Analysis of visitor behaviour, popular links, bounce rates, user engagement and conversion funnels. Improving marketing campaign performance and improving leads by collecting user analytics across the website and landing pages.<br><br> #matomo #wordpress #microsoftclarity");
+    createCode("<hr><br>Lucevankempen.com", "Hosting webpage and email<br><br> #wordpress");
+    createText("<hr><br><a href='https://github.com/two-trick-pony-NL' target='_blank'> Some of these projects have been documented on my Github, check it out: <i class='fab fa-github white'></i> https://github.com/two-trick-pony-NL</a>")
   }
-  else if(value === "about me"){
+
+  else if(value === "about"){
     trueValue(value);
-    createText("Oi, meu nome é Héber ;)")
-    createText("Desenvolvedor atualmente focado em todo o ecossistema Javascript. Utilizando principalmente a stack <span class='blue'>Node, React e React Native </span>por permitir criar aplicações de forma descomplicada e produtiva.")
+    createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
+    createText("I have over 5 years of experience as a product owner working for tech companies like bunq, Cybersprint and Friss while also helping friends and family with the tech-side of their passion projects. Over the last years I have specialised in UX/UI improvements, but anything goes really!  I do programming in python and tinkered around with:<br><br> <ul>Docker</ul> <ul>Wordpress</ul><ul>AWS</ul> <ul>Mixpanel</ul> <ul>Matomo</ul> <ul>Github</ul> <ul>Jira</ul> and many other tools")
+    createText("If you want to see some of my latest projects type: <i>projects</i>,")
+    createText("or type <i>contact</i> to get in touch")
   }
-  else if(value === "social -a"){
+  else if(value === "contact"){
     trueValue(value);
-    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
-    createText("<a href='https://www.linkedin.com/in/heber-leonard/' target='_blank'><i class='fab fa-linkedin-in white'></i> linkedin.com/in/heber-leonard</a>")
-    createText("<a href='https://www.instagram.com/heber_leonard/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/heber_leonard</a>")
-  }
-  else if(value === "social"){
-    trueValue(value);
-    createText("Didn't you mean: social -a?")
+    createText("<a href='https://github.com/two-trick-pony-NL' target='_blank'><i class='fab fa-github white'></i> Github</a>")
+    createText("<a href='https://www.linkedin.com/in/petervdoorn/' target='_blank'><i class='fab fa-linkedin-in white'></i> LinkedIn</a>")
+    createText("<a href='https://www.instagram.com/two.trick.pony_/' target='_blank'><i class='fab fa-instagram white'></i> Instagram</a>")
+    createText("<a href='mailto:peter@petervandoorn.com' target='_blank'><i class='fas fa-envelope white'> Drop me a line at hello@petervandoorn.com</a>")
   }
   
   else if(value === "clear"){
     document.querySelectorAll("p").forEach(e => e.parentNode.removeChild(e));
     document.querySelectorAll("section").forEach(e => e.parentNode.removeChild(e));
   }
+  else if(value.includes("sudo")){
+    createText("Nope, did you <i>really</i> think we let you become super user?")
+  }
+  else if(value.includes("rm -rf")){
+    createText("Deleting all the files, /jk")
+  }
+  else if(value === "pwd"){
+    createText("/petervandoorn/homepage/index.html")
+  }
+  else if(value === "cd .."){
+    createText("/petervandoorn/homepage")
+  }
+  
+  else if(value === "ls"){
+    createText("Guest<br>petervandoorn<br>Shared<br>public")
+  }
+  else if(value.includes("cat")){
+    createText("Meow! &#x1f408;")
+  }
   else{
     falseValue(value);
     createText(`command not found: ${value}`)
+    createText("Type help to see a list of commands");
+ 
   }
 }
 
