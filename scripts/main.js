@@ -68,14 +68,13 @@ async function getInputValue(){
     createCode("projects - For my latest projects", "");
     createCode("about - Me, in a nutshell", "");
     createCode("contact - To get in touch with me", "");
-    createCode("clear - clean up the terminal", "");
     createCode("repo - Straight to my Github, do not pass start", "");
-    
+    createCode("clear - clean up the terminal", "");
   }
   else if(value === "projects"){
     trueValue(value);
     createText("Here are my most recent projects")
-    createCode("<hr><br>Franklyapp", "<br>A custom built feedback collection platform written in Python. Check it out: <a href='https://github.com/two-trick-pony-NL/Frankly'>here</a><br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn #TwilioAPI");
+    createCode("<hr><br>Franklyapp", "<br>Frankly is a custom built feedback collection platform written in Python. I built the whole platform myself from scratch. Check it out: <a href='https://github.com/two-trick-pony-NL/Frankly'>here</a><br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn #TwilioAPI #SQL");
     createCode("<hr><br>InstaRecipe", "<br>InstaRecipe serves 12.000 recipes instantly. This was a portfolio project to keep up with modern webdevelopment. Check it out: <a href='https://github.com/two-trick-pony-NL/InstaRecipe'>here</a> <br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn #TwilioAPI");
     createCode("<hr><br>bunq", "<br>Various projects, from KYC/EDD automation, slashing time required to open a bank account to near-instant. To new product launches including iDin, Instant Payments, Zapier and OCR Receipt scanner in the bunq app.<br><br>#AWS #NativeApp #Fintech #unicorn#asknicely #Kibana #mixpanel");
     createCode("<hr><br>Cybersprint", "<br>Redesign and implementation a brand new user interface for the Cybersecurity platform. While rebuilding the platform proper Scrum and Agile methodology were implemented, increasing the velocity by as much as 30%. <br><br> #Vue.js #Django");
@@ -90,14 +89,14 @@ async function getInputValue(){
     createText("<hr><br><a href='https://github.com/two-trick-pony-NL' target='_blank'> Some of these projects have been documented on my Github, check it out: <i class='fab fa-github white'></i> https://github.com/two-trick-pony-NL</a>")
   }
 
-  else if(value === "about"){
+  else if(value.toLowerCase() === "about"){
     trueValue(value);
     createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
     createText("I have over 5 years of experience as a product owner working for tech companies like bunq, Cybersprint and Friss while also helping friends and family with the tech-side of their passion projects. Over the last years I have specialised in UX/UI and user interface design, but any tech project goes really! I love data driven decision making as it levels most arguments. I code in python and am familiar with tools like:<br><br> <ul>Docker</ul> <ul>Wordpress</ul><ul>AWS</ul> <ul>Mixpanel</ul> <ul>Matomo</ul> <ul>Github</ul> <ul>Jira</ul> and many more")
     createText("If you want to see some of my latest projects type: <i>projects</i>,")
     createText("or type <i>contact</i> to get in touch")
   }
-  else if(value === "contact"){
+  else if(value.toLowerCase() === "contact"){
     trueValue(value);
     createText("<a href='https://github.com/two-trick-pony-NL' target='_blank'><i class='fab fa-github white'></i> Github</a>")
     createText("<a href='https://www.linkedin.com/in/petervdoorn/' target='_blank'><i class='fab fa-linkedin-in white'></i> LinkedIn</a>")
@@ -105,32 +104,32 @@ async function getInputValue(){
     createText("<a href='mailto:peter@petervandoorn.com' target='_blank'><i class='fas fa-envelope white'> Drop me a line at hello@petervandoorn.com</a>")
   }
   
-  else if(value === "clear"){
+  else if(value.toLowerCase() === "clear"){
     document.querySelectorAll("p").forEach(e => e.parentNode.removeChild(e));
     document.querySelectorAll("section").forEach(e => e.parentNode.removeChild(e));
   }
-  else if(value.includes("sudo")){
+  else if(value.toLowerCase().includes("sudo")){
     createText("Nope, did you <i>really</i> think we let you become super user?")
   }
   else if(value.includes("rm -rf")){
     createText("Deleting all the files, /jk")
   }
-  else if(value === "pwd"){
+  else if(value.toLowerCase() === "pwd"){
     createText("/petervandoorn/homepage/index.html")
     
   }
-  else if(value === "repo"){
+  else if(value.toLowerCase() === "repo"){
     createText("<a href='https://github.com/two-trick-pony-NL' target='_blank'><i class='fab fa-github white'></i> Github</a>")
     
   }
-  else if(value.includes("cd")){
+  else if(value.toLowerCase().includes("cd")){
     createText("/petervandoorn/homepage")
   }
   
-  else if(value === "ls"){
+  else if(value.toLowerCase() === "ls"){
     createText("LICENSE<br>README.md<br>index.html<br>scripts<br>style.css")
   }
-  else if(value.includes("cat")){
+  else if(value.toLowerCase().includes("cat")){
     createText("Meow! &#x1f408;")
   }
   else{
