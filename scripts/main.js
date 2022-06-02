@@ -62,7 +62,7 @@ function removeInput(){
 async function getInputValue(){
   
   const value = document.querySelector("input").value;
-  if(value === "help"){
+  if(valuetoLowerCase() === "help"){
     trueValue(value);
     createCode("","Help -- Here are the commands that you can use:");
     createCode("projects - For my latest projects", "");
@@ -71,7 +71,7 @@ async function getInputValue(){
     createCode("repo - Straight to my Github, do not pass start", "");
     createCode("clear - clean up the terminal", "");
   }
-  else if(value === "projects"){
+  else if(valuetoLowerCase() === "projects"){
     trueValue(value);
     createText("Here are my most recent projects")
     createCode("<hr><br>Franklyapp", "<br>Frankly is a custom built feedback collection platform written in Python. I built the whole platform myself from scratch. Check it out: <a href='https://github.com/two-trick-pony-NL/Frankly'>here</a><br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn #TwilioAPI #SQL");
