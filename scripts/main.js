@@ -71,15 +71,6 @@ async function getInputValue(){
     createCode("repo - Straight to my Github, do not pass start", "");
     createCode("clear - clean up the terminal", "");
   }
-  if(value.toLowerCase() === "man"){
-    trueValue(value);
-    createCode("","Manual -- Here are the commands that you can use:");
-    createCode("projects - For my latest projects", "");
-    createCode("about - Me, in a nutshell", "");
-    createCode("contact - To get in touch with me", "");
-    createCode("repo - Straight to my Github, do not pass start", "");
-    createCode("clear - clean up the terminal", "");
-  }
   else if(value.toLowerCase() === "projects"){
     trueValue(value);
     createText("Here are my most recent projects")
