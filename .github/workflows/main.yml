@@ -2,13 +2,13 @@ on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Deployment to Cpanel
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
+    - name: 🚚 Get latest code from Github repo
       uses: actions/checkout@v2
     
-    - name: 📂 Sync files
+    - name: 📂 Sync files between Github and Cpanel
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ftp.petervandoorn.com
