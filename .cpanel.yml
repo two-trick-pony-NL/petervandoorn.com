@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/petervan/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp webfonts $DEPLOYPATH
+    - /bin/cp scripts $DEPLOYPATH
+    - /bin/cp styles $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH    
+        

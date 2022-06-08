@@ -21,7 +21,7 @@ app.addEventListener("click", function(event){
 
 
 async function open_terminal(){
-  createText("Welcome to petervandoorn.com");
+  createText("Welcome to petervandoorn.com <br> Last login: Thu Jun  2 14:54:22 on ttys000<br>type a command to get started");
   await delay(700);
   createText("");
   await delay(1000);
@@ -69,7 +69,9 @@ async function getInputValue(){
     createCode("about - Me, in a nutshell", "");
     createCode("contact - To get in touch with me", "");
     createCode("repo - Straight to my Github, do not pass start", "");
+    createCode("game - Work hard play hard, right?", "");
     createCode("clear - clean up the terminal", "");
+    
   }
   else if(value.toLowerCase() === "projects"){
     trueValue(value);
@@ -130,11 +132,18 @@ async function getInputValue(){
   else if(value.toLowerCase().includes("cat")){
     createText("Meow! &#x1f408;")
   }
+  else if(value.toLowerCase().includes("mendel")){
+    createText("<div style='width:75%'><div style='height:0;padding-bottom:75.15625%;position:relative;width:75%'><iframe allowfullscreen='' frameBorder='0' height='75%' src='https://giphy.com/embed/7bU683xtQXPcEyP020/video' style='left:0;position:absolute;top:0' width='100%'></iframe></div></div>")
+  }
+
+  else if(value.toLowerCase().includes("game")){
+    createText("<iframe src='https://dwmkerr.github.io/spaceinvaders/' width='800' height='500'frameBorder='0'></iframe>")
+  }
   else{
     falseValue(value);
     createText(`command not found: ${value}`)
-    createText("Type help to see a list of commands");
- 
+    createText("Type help to see a list of commands or try one of these:");
+    createText("<ul>about</ul><ul>projects</ul><ul>cat</ul><ul>sudo</ul><ul>game</ul>");
   }
 }
 

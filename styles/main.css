@@ -35,7 +35,7 @@ a{
   color: rgb(238, 238, 238);
 }
 body{
-  background-color:#393fffA59;
+  background-color:#fff;
 
   height: 100vh;
   font-family: 'Fira Code', monospace;
@@ -50,10 +50,11 @@ body{
   height:90%;
   overflow: hidden;
   border-radius: 6px;
-  border: 1px solid gray;
+  border: 0px solid gray;
   margin:20px;
   cursor: text;
 }
+
 .menu{
   display:flex;
   align-items: center;
@@ -66,6 +67,22 @@ body{
   padding: 0 8px;
   cursor:default;
 }
+
+.footer{
+  display:flex;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  flex-direction: row;
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+  border: #fff;
+  padding: 0 8px;
+  cursor:default;
+  text-align: left;
+}
+
 .menu .button{
   width:12px;
   height:12px;
@@ -120,6 +137,9 @@ p{
 h2{
   font-size:16px;
   color:rgb(238, 238, 238);
+}
+a{
+  color:#000
 }
 p.code{
   color:#66C2CD;
