@@ -14,3 +14,4 @@ jobs:
         server: ftp.petervandoorn.com
         username: petervan
         password: ${{ secrets.FTPPASSWORD }}
+        server-dir: /home/petervan/public_html/
