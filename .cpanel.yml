@@ -3,8 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/petervan/public_html/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp webfonts $DEPLOYPATH
-    - /bin/cp scripts $DEPLOYPATH
-    - /bin/cp styles $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH    
-        
+    - /bin/cp -R webfonts $DEPLOYPATH
+    - /bin/cp -R scripts $DEPLOYPATH 
+    - /bin/cp -R styles $DEPLOYPATH
