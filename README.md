@@ -1,4 +1,6 @@
 # Terminal Style Portfolio Page
+[![🚀 Deploy website on push](https://github.com/two-trick-pony-NL/terminal-style-homepage/actions/workflows/main.yml/badge.svg)](https://github.com/two-trick-pony-NL/terminal-style-homepage/actions/workflows/main.yml)
+
 ![](https://github.com/two-trick-pony-NL/terminal-style-homepage/blob/master/preview.png)
 
 ## What is it: 
