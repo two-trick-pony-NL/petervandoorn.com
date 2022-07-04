@@ -67,6 +67,7 @@ async function getInputValue(){
     createCode("","Help -- Here are the commands that you can use:");
     createCode("projects - For my latest projects", "");
     createCode("about - Me, in a nutshell", "");
+    createCode("freelance - If you want me to come work for you", "");
     createCode("contact - To get in touch with me", "");
     createCode("repo - Straight to my Github, do not pass start", "");
     createCode("game - Work hard play hard, right?", "");
@@ -76,25 +77,34 @@ async function getInputValue(){
   else if(value.toLowerCase() === "projects"){
     trueValue(value);
     createText("Here are my most recent projects")
+    createCode("<hr><br>ScanGame", "<br>Scangame is a fun game I designed and built. You earn points by finding and photographing objects in your house. For instance: Scan a person, or a plant. Objects are detected with AI and analyzed on a custom backend. The game itself runs natively on your smartphone. Check it out: <a href='https://github.com/two-trick-pony-NL/ScanGameApps'>here</a><br><br> #AWSLightsail #FastAPI #Python #Matomo #ReactNative #AI #MachineLearning");
     createCode("<hr><br>Franklyapp", "<br>Frankly is a custom built feedback collection platform written in Python. I built the whole platform myself from scratch. Check it out: <a href='https://github.com/two-trick-pony-NL/Frankly'>here</a><br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn #TwilioAPI #SQL");
-    createCode("<hr><br>InstaRecipe", "<br>InstaRecipe serves 12.000 recipes instantly. This was a portfolio project to keep up with modern webdevelopment. Check it out: <a href='https://github.com/two-trick-pony-NL/InstaRecipe'>here</a> <br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn #TwilioAPI");
+    createCode("<hr><br>InstaRecipe", "<br>InstaRecipe serves 12.000 recipes instantly. This was a portfolio project to keep up with modern webdevelopment. Check it out: <a href='https://github.com/two-trick-pony-NL/InstaRecipe'>here</a> <br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn");
     createCode("<hr><br>bunq", "<br>Various projects, from KYC/EDD automation, slashing time required to open a bank account to near-instant. To new product launches including iDin, Instant Payments, Zapier and OCR Receipt scanner in the bunq app.<br><br>#AWS #NativeApp #Fintech #unicorn#asknicely #Kibana #mixpanel");
     createCode("<hr><br>Cybersprint", "<br>Redesign and implementation a brand new user interface for the Cybersecurity platform. While rebuilding the platform proper Scrum and Agile methodology were implemented, increasing the velocity by as much as 30%. <br><br> #Vue.js #Django");
     createCode("<hr><br>Friss", "<br>Leading a multidisciplinary team tasked to overhaul the Friss Fraud Detection platform. Unifying look, feel and functionality across the board while updating systems to use the latest technologies.<br><br>#Matomo #Azure #Elastic Vue.js");
     createCode("<hr><br>Corinahorstman.nl", "<br>Freelance project designing and building a landing page for Psychotherapist Corina Horstman. Check it out: <a href='https://corinahorstman.nl'>here</a> <br><br>#Wordpress");
     createCode("<hr><br>Growthtribe", "<br>2 day course on growth strategies and conversion optimalisation <br><br>#GrowthTribe");
-    createCode("<hr><br>Keerzeven.nl", "<br>Freelance Design, hosting and implementation of a landing page for Keerzeven.nl. Check it out: <a href='https://keerzeven.nl<br><br>#Wordpress");
+    createCode("<hr><br>Keerzeven.nl", "<br>Freelance Design, hosting and implementation of a landing page for Keerzeven.nl. Check it out: <a href='https://keerzeven.nl'>here</a><br><br>#Wordpress");
     createCode("<hr><br>Lovely Workout", "<br>Analysis of visitor behaviour, popular links, bounce rates, user engagement and conversion funnels. Improving marketing campaign performance and improving leads by collecting user analytics across the website and landing pages.<br><br> #matomo #wordpress #microsoftclarity");
     createCode("<hr><br>Lucevankempen.com", "<br>Hosting webpage and email.<br><br> #wordpress");
-    createCode("<hr><br><a href='https://github.com/two-trick-pony-NL' target='_blank'> Some of these projects have been documented on my Github, check it out: <i class='fab fa-github white'></i> https://github.com/two-trick-pony-NL</a>")
+    createCode("<hr><br>Github", "<br>Some of these projects have been documented on my Github, check it out: <a href='https://github.com/two-trick-pony-NL' target='_blank'> <i class='fab fa-github white'></i> https://github.com/two-trick-pony-NL</a>")
   }
 
   else if(value.toLowerCase() === "about"){
     trueValue(value);
     createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
-    createText("I have over 5 years of experience as a product owner working for tech companies like bunq, Cybersprint and Friss while also helping friends and family with the tech-side of their passion projects. Over the last years I have specialised in UX/UI and user interface design, but any tech project goes really! I love data driven decision making as it levels most arguments. I code in python and am familiar with tools like:<br><br> <ul>Docker</ul> <ul>Wordpress</ul><ul>AWS</ul> <ul>Mixpanel</ul> <ul>Matomo</ul> <ul>Github</ul> <ul>Jira</ul> and many more")
-    createText("If you want to see some of my latest projects type: <i>projects</i>,")
-    createText("or type <i>contact</i> to get in touch")
+    createText("I have over 5 years of experience as a product owner working for tech companies like bunq, Cybersprint and Friss while also doing Freelance work and helping friends and family with the tech-side of their passion projects. Over the last years I have specialised in UX/UI and user interface design, but any tech project goes really! I love data driven decision making as it levels most arguments. I code in python and am familiar with tools like:<br><br> <ul>Docker</ul> <ul>Wordpress</ul><ul>AWS</ul> <ul>Mixpanel</ul> <ul>Matomo</ul> <ul>Github</ul> <ul>Jira</ul> and many more")
+    createText("If you want to see some of my latest projects type: <i>projects</i>, or type <i>Freelance</i> if you want to work with me")
+    createText("Type <i>contact</i> to get in touch")
+  }
+  else if(value.toLowerCase() === "freelance"){
+    trueValue(value);
+    createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
+    createText("I am most comfortable in the role of product owner. My expertise is what happens between business objective and working product. I start every project with a BI and market analysis and wrap up with user feedback, in the middle I fascilitate agile software development as product owner.")
+    createText("Next to Product Owner, I have experience as Trainer and doing research and if necessary I'll help write the code that is needed to get the job done.")
+    createText("If you'd like to hire me for your project then reach out. My reate is <i>€104,-</i> per hour excluding VAT, custom rates can be negotiated based on the hours per week.")
+    createText("Type <i>projects</i> to see what projects I have worked on or type <i>contact</i> to get in touch")
   }
   else if(value.toLowerCase() === "contact"){
     trueValue(value);
@@ -143,7 +153,7 @@ async function getInputValue(){
     falseValue(value);
     createText(`command not found: ${value}`)
     createText("Type help to see a list of commands or try one of these:");
-    createText("<ul>about</ul><ul>projects</ul><ul>cat</ul><ul>sudo</ul><ul>game</ul>");
+    createText("<ul>about</ul><ul>projects</ul><ul>cat</ul><ul>sudo</ul><ul>game</ul><ul>freelance</ul>");
   }
 }
 
