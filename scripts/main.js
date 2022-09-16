@@ -106,6 +106,18 @@ async function getInputValue(){
     createText("If you'd like to hire me for your project then reach out. My reate is <i>€104,-</i> per hour excluding VAT, custom rates can be negotiated based on the hours per week.")
     createText("Type <i>projects</i> to see what projects I have worked on or type <i>contact</i> to get in touch")
   }
+  else if(value.toLowerCase() === "hello"){
+    trueValue(value);
+    createText(" 👋🏻 Hi there! How are you doing? My name is Peter, I take on tech challenges")
+    createCode("","Here are the commands that you can use on this page:");
+    createCode("projects - For my latest projects", "");
+    createCode("about - Me, in a nutshell", "");
+    createCode("freelance - If you want me to come work for you", "");
+    createCode("contact - To get in touch with me", "");
+    createCode("repo - Straight to my Github, do not pass start", "");
+    createCode("game - Work hard play hard, right?", "");
+    createCode("clear - clean up the terminal", "");
+  }
   else if(value.toLowerCase() === "contact"){
     trueValue(value);
     createText("<a href='https://github.com/two-trick-pony-NL' target='_blank'><i class='fab fa-github white'></i> Github</a>")
