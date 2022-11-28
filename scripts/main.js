@@ -144,6 +144,10 @@ async function getInputValue(){
     createText("<a href='https://github.com/two-trick-pony-NL' target='_blank'><i class='fab fa-github white'></i> Github</a>")
     
   }
+  else if(value.toLowerCase() === "status"){
+    createText("<a href='https://two-trick-pony-nl.github.io/upptime/' target='_blank'><i class='fab fa-github white'></i> Upptime dashboard</a>")
+    
+  }
   else if(value.toLowerCase().includes("cd")){
     createText("/petervandoorn/homepage")
   }
