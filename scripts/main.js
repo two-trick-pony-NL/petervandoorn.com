@@ -166,7 +166,7 @@ async function getInputValue(){
   }
 
   else if(value.toLowerCase().includes("game")){
-    createText("<iframe src='https://dwmkerr.github.io/spaceinvaders/' width='800' height='500'frameBorder='0'></iframe>")
+    createText("<iframe src='https://dwmkerr.github.io/spaceinvaders/' width="100%" height='500'frameBorder='0'></iframe>")
   }
   else{
     falseValue(value);
