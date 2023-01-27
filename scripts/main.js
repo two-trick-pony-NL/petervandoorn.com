@@ -72,7 +72,6 @@ async function getInputValue(){
     createCode("repo - Straight to my Github, do not pass start", "");
     createCode("game - Work hard play hard, right?", "");
     createCode("clear - clean up the terminal", "");
-    createCode("<img src=\"images/logo1.png\" width=\"600\"  alt=\"Logo\">","");
   }
   else if(value.toLowerCase() === "projects"){
     trueValue(value);
