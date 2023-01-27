@@ -71,6 +71,7 @@ async function getInputValue(){
     createCode("contact - To get in touch with me", "");
     createCode("repo - Straight to my Github, do not pass start", "");
     createCode("game - Work hard play hard, right?", "");
+    createCode("blog - Check out my blogposts on projects I am working on", "");
     createCode("clear - clean up the terminal", "");
   }
   else if(value.toLowerCase() === "projects"){
@@ -133,13 +134,18 @@ async function getInputValue(){
     createCode("game - Work hard play hard, right?", "");
     createCode("clear - clean up the terminal", "");
   }
+  else if(value.toLowerCase() === "blog"){
+    trueValue(value);
+    createText(" 👋🏻 I keep a blog that goes into more depth on the projects I worked on.")
+    createText("<a href='https://petervandoorn.vercel.app/' target='_blank'> Read it here</a>")
+  }
   else if(value.toLowerCase() === "contact"){
     trueValue(value);
     createText("<a href='https://github.com/two-trick-pony-NL' target='_blank'><i class='fab fa-github white'></i> Github</a>")
     createText("<a href='https://www.linkedin.com/in/petervdoorn/' target='_blank'><i class='fab fa-linkedin-in white'></i> LinkedIn</a>")
     createText("<a href='https://www.instagram.com/two.trick.pony_/' target='_blank'><i class='fab fa-instagram white'></i> Instagram</a>")
-    createText("<a href='mailto:peter@petervandoorn.com' target='_blank'><i class='fas fa-envelope white'> Drop me a line at hello@petervandoorn.com</a>")
-    createText("My KvK (chamber of commerce) number is: 89010701.")
+    createText("<a href='mailto:peter@petervandoorn.com' target='_blank'><i class='fas fa-newspaper white'></i> Blog</a>")
+    createText("<i class='fas fa-building white'></i> KvK number is: 89010701")
   }
   
   else if(value.toLowerCase() === "clear"){
