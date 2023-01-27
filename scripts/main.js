@@ -144,7 +144,7 @@ async function getInputValue(){
     createText("<a href='https://github.com/two-trick-pony-NL' target='_blank'><i class='fab fa-github white'></i> Github</a>")
     createText("<a href='https://www.linkedin.com/in/petervdoorn/' target='_blank'><i class='fab fa-linkedin-in white'></i> LinkedIn</a>")
     createText("<a href='https://www.instagram.com/two.trick.pony_/' target='_blank'><i class='fab fa-instagram white'></i> Instagram</a>")
-    createText("<a href='mailto:peter@petervandoorn.com' target='_blank'><i class='fas fa-newspaper white'></i> Blog</a>")
+    createText("<a href='https://petervandoorn.vercel.app/' target='_blank'><i class='fas fa-newspaper white'></i> Blog</a>")
     createText("<i class='fas fa-building white'></i> KvK number is: 89010701")
   }
   
