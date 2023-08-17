@@ -76,36 +76,37 @@ async function getInputValue(){
   }
   else if(value.toLowerCase() === "projects"){
     trueValue(value);
-    createText("Here are my most recent projects")
-    createCode("<hr><br>Bussie", "<br>Bussie is a work in progress. The idea is that you can see all public transport live location near you, so you can decide whether to get a cup of coffee or run for your train. Check out my proof of concept: <a href='https://two-trick-pony-nl-bussie-analytics-dashboard-szt85z.streamlit.app/'>here</a><br><br> #AWS #FastAPI #Python #ReactNative #Streamlit");
-    createCode("<img src=\"images/bussie.png\" width=\"600\" alt=\"bussiepreview\">","Dashboard with vehicle locations");
-    createCode("<hr><br>Lullaby AI", "<br>Lullaby AI generates custom bedtime stories for kids using ChatGPT it then creates illustrations with Dall-E  Check out my proof of concept: <a href='https://github.com/two-trick-pony-NL/LullabAI'>here</a><br><br> #ChatGPT #Dall-E #Python #Flask #AI");
+    createText("Here are my most recent projects");
+    createCode("<hr><br>Bussie", "<br>Bussie is an ongoing project that aims to provide real-time public transport location information in your vicinity. This helps you decide whether to grab a coffee or rush for your train. Explore my proof of concept: <a href='https://two-trick-pony-nl-bussie-analytics-dashboard-szt85z.streamlit.app/' target='_blank'>here</a><br><br> #AWS #FastAPI #Python #ReactNative #Streamlit");
+    createCode("<img src=\"images/bussie.png\" width=\"600\" alt=\"bussiepreview\">","Dashboard displaying vehicle locations");
+    createCode("<hr><br>Lullaby AI", "<br>Lullaby AI generates personalized bedtime stories for kids using ChatGPT, accompanied by illustrations created with Dall-E. Check out my proof of concept: <a href='https://github.com/two-trick-pony-NL/LullabAI' target='_blank'>here</a><br><br> #ChatGPT #Dall-E #Python #Flask #AI");
     createCode("<img src=\"images/lullabyai.gif\" width=\"600\"  alt=\"lullabyaipreview\">","");
-    createCode("<hr><br>Citizen Science NL", "<br>For Citizen Science NL I created some dynamic data fetching for their wordpress page, as well as kickstart a brand new website on Django</a><br><br> #AWS #Django #Python #bootstrap #wordpress ");
+    createCode("<hr><br>Citizen Science NL", "<br>I created dynamic data fetching for Citizen Science NL's WordPress page and initiated a new website using Django.<br><br> #AWS #Django #Python #bootstrap #wordpress ");
     createCode("<img src=\"images/csnl.png\" width=\"600\"  alt=\"csnlpreview\">","Homepage");
-    createCode("<hr><br>Photo Scavenger", "<br>Photo Scavenger is a game I designed and built. You earn points by finding and photographing objects in your house. For instance: Scan a person, or a plant. Objects are detected with AI and analyzed on a custom backend. The game itself runs natively on your smartphone. Check it out: <a href='https://photoscavenger.petervandoorn.com'>here</a><br><br> #Heroku #FastAPI #Python #ReactNative #AI #MachineLearning");
+    createCode("<hr><br>Photo Scavenger", "<br>Photo Scavenger is a game I designed and built. Players earn points by finding and photographing objects in their homes, detected using AI and analyzed on a custom backend. The game runs natively on smartphones. Check it out: <a href='https://photoscavenger.petervandoorn.com' target='_blank'>here</a><br><br> #Heroku #FastAPI #Python #ReactNative #AI #MachineLearning");
     createCode("<img src=\"images/photoscavenger.png\" width=\"400\"  alt=\"photoscavengerlogo\">","Logo");
-    createCode("<img src=\"images/photoscavenger.gif\" width=\"250\"  alt=\"photoscavengergameplaypreview\">","In app object detection");
-    createCode("<hr><br>Franklyapp", "<br>Frankly is a custom built feedback collection platform written in Python. I built the whole platform myself from scratch. Check it out: <a href='https://github.com/two-trick-pony-NL/Frankly'>here</a><br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn #TwilioAPI #SQL");
+    createCode("<img src=\"images/photoscavenger.gif\" width=\"250\"  alt=\"photoscavengergameplaypreview\">","In-app object detection");
+    createCode("<hr><br>Franklyapp", "<br>Franklyapp is a custom-built feedback collection platform written in Python. I built the entire platform from scratch. Check it out: <a href='https://github.com/two-trick-pony-NL/Frankly' target='_blank'>here</a><br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn #TwilioAPI #SQL");
     createCode("<img src=\"images/frankly1.png\" width=\"400\"  alt=\"franklypreview\">","Homepage");
     createCode("<img src=\"images/frankly2.png\" width=\"400\"  alt=\"franklypreview\">","Dashboard");
-    createCode("<hr><br>InstaRecipe", "<br>InstaRecipe serves 12.000 recipes instantly. This was a portfolio project to keep up with modern webdevelopment. Check it out: <a href='https://github.com/two-trick-pony-NL/InstaRecipe'>here</a> <br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn");
+    createCode("<hr><br>InstaRecipe", "<br>InstaRecipe instantly provides access to 12,000 recipes. It's a portfolio project aimed at modern web development. Explore it: <a href='https://github.com/two-trick-pony-NL/InstaRecipe' target='_blank'>here</a><br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn");
     createCode("<img src=\"images/instarecipe.png\" width=\"400\"  alt=\"instarecipepreview\">","Recipe page");
-    createCode("<hr><br>bunq", "<br>Various projects, from KYC/EDD automation, slashing time required to open a bank account to near-instant. To new product launches including iDin, Instant Payments, Zapier and OCR Receipt scanner in the bunq app.<br><br>#AWS #NativeApp #Fintech #unicorn#asknicely #Kibana #mixpanel");
+    createCode("<hr><br>bunq", "<br>I've worked on various projects for bunq, including KYC/EDD automation and product launches like iDin, Instant Payments, Zapier, and OCR Receipt Scanner in the bunq app.<br><br>#AWS #NativeApp #Fintech #unicorn#asknicely #Kibana #mixpanel");
     createCode("<img src=\"images/bunq.png\" width=\"250\"  alt=\"bunq\">","");
-    createCode("<hr><br>Cybersprint", "<br>Redesign and implementation a brand new user interface for the Cybersecurity platform. While rebuilding the platform proper Scrum and Agile methodology were implemented, increasing the velocity by as much as 30%. <br><br> #Vue.js #Django");
+    createCode("<hr><br>Cybersprint", "<br>I led the redesign and implementation of a new user interface for the Cybersprint cybersecurity platform. The rebuild incorporated Scrum and Agile methodologies, increasing velocity by up to 30%.<br><br> #Vue.js #Django");
     createCode("<img src=\"images/cybersprint.png\" width=\"250\"  alt=\"cybersprint\">","");
-    createCode("<hr><br>Friss", "<br>Leading a multidisciplinary team tasked to overhaul the Friss Fraud Detection platform. Unifying look, feel and functionality across the board while updating systems to use the latest technologies.<br><br>#Matomo #Azure #Elastic Vue.js");
+    createCode("<hr><br>Friss", "<br>I led a multidisciplinary team to overhaul the Friss Fraud Detection platform. I unified the look, feel, and functionality while updating systems with the latest technologies.<br><br>#Matomo #Azure #Elastic Vue.js");
     createCode("<img src=\"images/friss.png\" width=\"250\"  alt=\"friss\">","");
-    createCode("<hr><br>Corinahorstman.nl", "<br>Freelance project designing and building a landing page for Psychotherapist Corina Horstman. Check it out: <a href='https://corinahorstman.nl'>here</a> <br><br>#Wordpress");
+    createCode("<hr><br>Corinahorstman.nl", "<br>I designed and built a landing page for Psychotherapist Corina Horstman. Explore it: <a href='https://corinahorstman.nl' target='_blank'>here</a> <br><br>#Wordpress");
     createCode("<img src=\"images/corinahorstman.png\" width=\"400\"  alt=\"corinahorstmanpreview\">","Dashboard");
-    createCode("<hr><br>Growthtribe", "<br>2 day course on growth strategies and conversion optimalisation <br><br>#GrowthTribe");
-    createCode("<hr><br>Keerzeven.nl", "<br>Freelance Design, hosting and implementation of a landing page for Keerzeven.nl. In 2023 we started working on a homework planner app in React Native.><br><br>#Wordpress");
+    createCode("<hr><br>Growthtribe", "<br>I participated in a 2-day course on growth strategies and conversion optimization. <br><br>#GrowthTribe");
+    createCode("<hr><br>Keerzeven.nl", "<br>I engaged in freelance design, hosting, and implementation of a landing page for Keerzeven.nl. In 2023, I started working on a React Native homework planner app.<br><br>#Wordpress");
     createCode("<img src=\"images/keerzeven.png\" width=\"400\"  alt=\"keerzevenpreview\">","Homepage");
-    createCode("<hr><br>Lovely Workout", "<br>Analysis of visitor behaviour, popular links, bounce rates, user engagement and conversion funnels. Improving marketing campaign performance and improving leads by collecting user analytics across the website and landing pages.<br><br> #matomo #wordpress #microsoftclarity");
-    createCode("<hr><br>Lucevankempen.com", "<br>Hosting webpage and email.<br><br> #wordpress");
-    createCode("<hr><br>Github", "<br>Some of these projects have been documented on my Github, check it out: <a href='https://github.com/two-trick-pony-NL' target='_blank'> <i class='fab fa-github white'></i> https://github.com/two-trick-pony-NL</a>")
+    createCode("<hr><br>Lovely Workout", "<br>I analyzed visitor behavior, improved marketing campaigns, and increased leads by collecting user analytics across the website and landing pages.<br><br> #matomo #wordpress #microsoftclarity");
+    createCode("<hr><br>Lucevankempen.com", "<br>I provided hosting for the webpage and email.<br><br> #wordpress");
+    createCode("<hr><br>Github", "<br>Some of these projects are documented on my Github. Check it out: <a href='https://github.com/two-trick-pony-NL' target='_blank'> <i class='fab fa-github white'></i> https://github.com/two-trick-pony-NL</a>");
   }
+
 
   else if(value.toLowerCase() === "about"){
     trueValue(value);
