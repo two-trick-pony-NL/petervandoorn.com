@@ -137,8 +137,8 @@ async function getInputValue(){
     trueValue(value);
     createCode("<img src=\"images/avatar.jpeg\" width=\"200\" height=\"200\" alt=\"Peter\" style=\"border-radius: 50%;\">","");
     createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
-    createText("My comfort zone lies primarily within the role of a product owner. I specialize in bridging the gap between business objectives and functional products. My project approach involves kicking off with comprehensive business intelligence and market analysis, and concluding with usage feedback and a performance dashboard.I facilitate no-nonsense software development as a product owner.")
-    createText("Beyond my role as a Product Owner, I boast experience as a Trainer, a Researcher, and even as a hands-on coder, capable of crafting the necessary code to accomplish the task at hand.")
+    createText("My comfort zone lies primarily within the role of a product owner. I specialize in bridging the gap between business objectives and functional products. My project approach involves kicking off with comprehensive business case and concluding with usage feedback and a performance dashboard.I facilitate no-nonsense software development as a product owner.")
+    createText("Beyond my role as a Product Owner, I have experience as a trainer and even as a hands-on coder (Python and React Native), capable of crafting the code to accomplish the task at hand.")
     createText("You can find me registered as a freelancer at the Chamber of Commerce under the number: 89010701. If you're interested in enlisting my services for your project, don't hesitate to get in touch to discuss the scope of your project.")
     createText("To view a list of projects I've been involved in, type <i>projects</i>. If you wish to get in touch, type <i>contact</i>.")
   }
