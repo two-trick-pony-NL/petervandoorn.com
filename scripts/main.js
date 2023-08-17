@@ -118,7 +118,7 @@ async function getInputValue(){
     createCode("<img src=\"images/frankly2.png\" width=\"400\"  alt=\"franklypreview\">","Dashboard");
     createCode("<hr><br>InstaRecipe", "<br>InstaRecipe instantly provides access to 12,000 recipes. It's a portfolio project aimed at modern web development. Explore it: <a href='https://github.com/two-trick-pony-NL/InstaRecipe' target='_blank'>here</a><br><br> #AWSLightsail #Docker #Flask #Python #Matomo #Gunicorn");
     createCode("<img src=\"images/instarecipe.png\" width=\"400\"  alt=\"instarecipepreview\">","Recipe page");
-    createCode("<hr><br>bunq", "<br>I've worked on various projects for bunq, including KYC/EDD automation and product launches like iDin, Instant Payments, Zapier, and OCR Receipt Scanner in the bunq app.<br><br>#AWS #NativeApp #Fintech #unicorn#asknicely #Kibana #mixpanel");
+    createCode("<hr><br>bunq", "<br>I've worked on various projects for bunq, including KYC/EDD automation and product launches like iDin, Instant Payments, Zapier, and OCR Receipt Scanner in the bunq app. As well as trained employees on start-up mindsets as cultural evengalist.<br><br>#AWS #NativeApp #Fintech #unicorn#asknicely #Kibana #mixpanel");
     createCode("<img src=\"images/bunq.png\" width=\"250\"  alt=\"bunq\">","");
     createCode("<hr><br>Cybersprint", "<br>I led the redesign and implementation of a new user interface for the Cybersprint cybersecurity platform. The rebuild incorporated Scrum and Agile methodologies, increasing velocity by up to 30%.<br><br> #Vue.js #Django");
     createCode("<img src=\"images/cybersprint.png\" width=\"250\"  alt=\"cybersprint\">","");
@@ -137,9 +137,9 @@ async function getInputValue(){
     trueValue(value);
     createCode("<div style=\"text-align: center;\">","<img src=\"images/avatar.jpeg\" width=\"200\" height=\"200\" alt=\"Peter\" style=\"border-radius: 50%;\">","</div>");    
     createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
-    createText("My comfort zone lies primarily within the role of a product owner. I specialize in bridging the gap between business objectives and functional products. My project approach involves kicking off with comprehensive business case and concluding with usage feedback and a performance dashboard.I facilitate no-nonsense software development as a product owner.")
-    createText("Beyond my role as a Product Owner, I have experience as a trainer and even as a hands-on coder (Python and React Native), capable of crafting the code to accomplish the task at hand.")
-    createText("You can find me registered as a freelancer at the Chamber of Commerce under the number: 89010701. If you're interested in enlisting my services for your project, don't hesitate to get in touch to discuss the scope of your project.")
+    createText("My comfort zone lies within the role of a product owner. I specialize in bridging the gap between business objectives and functional products. My project approach involves kicking off with a business case and concluding with usage feedback and a performance dashboard. Whether you call it scrum or agile: I facilitate no-nonsense software development focused on outcome.")
+    createText("Beyond my role as a Product Owner, I have served as a culture consultant at bunq, teaching skills and mindset to both fresh graduates and seasoned professionals, enabling them to keep delivering outcome in a fast paced startup environment. If it's code you need then I am proficient coding in Python (Django/FastAPI) and React Native (Expo).")
+    createText("You can find me registered as a freelancer at the Chamber of Commerce under the number: 89010701. If you're interested in my services (Consulting, product or coding), don't hesitate to get in touch to discuss the scope of your project.")
     createText("To view a list of projects I've been involved in, type <i>projects</i>. If you wish to get in touch, type <i>contact</i>.")
   }
   else if(value.toLowerCase() === "hello"){
