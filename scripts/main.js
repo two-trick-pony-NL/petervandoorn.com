@@ -109,9 +109,9 @@ async function getInputValue(){
   else if(value.toLowerCase() === "freelance" || value.toLowerCase() === "about") {
     trueValue(value);
     createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
-    createText("My comfort zone lies primarily within the role of a product owner. I specialize in bridging the gap between business objectives and functional products. My project approach involves kicking off with comprehensive business intelligence and market analysis, and concluding with invaluable user feedback. In the midst of it all, I facilitate agile software development as a dedicated product owner.")
+    createText("My comfort zone lies primarily within the role of a product owner. I specialize in bridging the gap between business objectives and functional products. My project approach involves kicking off with comprehensive business intelligence and market analysis, and concluding with usage feedback and a performance dashboard.I facilitate no-nonsense software development as a product owner.")
     createText("Beyond my role as a Product Owner, I boast experience as a Trainer, a Researcher, and even as a hands-on coder, capable of crafting the necessary code to accomplish the task at hand.")
-    createText("You can find me registered as a freelancer at the Chamber of Commerce under the number: 89010701. If you're interested in enlisting my services for your project, don't hesitate to get in touch to discuss the scope of your endeavor.")
+    createText("You can find me registered as a freelancer at the Chamber of Commerce under the number: 89010701. If you're interested in enlisting my services for your project, don't hesitate to get in touch to discuss the scope of your project.")
     createText("To view a list of projects I've been involved in, type <i>projects</i>. If you wish to get in touch, type <i>contact</i>.")
   }
   else if(value.toLowerCase() === "hello"){
@@ -133,9 +133,10 @@ async function getInputValue(){
   }
   else if(value.toLowerCase() === "contact"){
     trueValue(value);
+    createText("<i class='fas fa-envelope white'></i> freelance@petervandoorn.com")
+    createText("<i class='fas fa-phone white'></i> +316 10468353")
     createText("<a href='https://github.com/two-trick-pony-NL' target='_blank'><i class='fab fa-github white'></i> Github</a>")
     createText("<a href='https://www.linkedin.com/in/petervdoorn/' target='_blank'><i class='fab fa-linkedin-in white'></i> LinkedIn</a>")
-    createText("<a href='https://www.instagram.com/two.trick.pony_/' target='_blank'><i class='fab fa-instagram white'></i> Instagram</a>")
     createText("<a href='https://petervandoorn.vercel.app/' target='_blank'><i class='fas fa-newspaper white'></i> Blog</a>")
     createText("<i class='fas fa-building white'></i> KvK number is: 89010701")
   }
