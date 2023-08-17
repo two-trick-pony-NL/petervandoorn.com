@@ -1,6 +1,21 @@
 
 const app = document.querySelector("#app");
 const delay = ms => new Promise(res => setTimeout(res, ms));
+
+function autoType(text) {
+  const p = document.createElement("p");
+  p.classList.add("autotyped-text");
+  app.appendChild(p);
+
+  let index = 0;
+  const interval = setInterval(function () {
+    p.textContent += text[index];
+    index++;
+    if (index === text.length) {
+      clearInterval(interval);
+    }
+  }, 100);
+}
     
     
 app.addEventListener("keypress", async function(event){
@@ -21,12 +36,15 @@ app.addEventListener("click", function(event){
 
 
 async function open_terminal(){
-  createText("Welcome to petervandoorn.com <br> Last login: Thu Jun  2 14:54:22 on ttys000<br>type a command to get started");
+  createText("Welcome to petervandoorn.com <br> Last login: Thu Jun  2 14:54:22 on ttys000");
   await delay(700);
   createText("");
-  await delay(1000);
-
   new_line();
+  autoType("Start typing  here to start exploring!");  
+  await delay(7000)
+  autoType("try: ");
+  await delay(1500)
+  autoType("hello 👋🏻, about 👱🏼‍♂️, projects 🏗️, contact 📫, game 🕹️")
 }
 
 
@@ -50,6 +68,15 @@ function new_line(){
   div.appendChild(i);
   div.appendChild(input);
   app.appendChild(div);
+
+  // Add an event listener to the input field to remove the autotyped text
+  input.addEventListener("input", function () {
+    const autotypedText = document.querySelector(".autotyped-text");
+    if (autotypedText) {
+      autotypedText.remove();
+    }
+  });
+
   input.focus();
   
 }
@@ -108,6 +135,7 @@ async function getInputValue(){
   }
   else if(value.toLowerCase() === "freelance" || value.toLowerCase() === "about") {
     trueValue(value);
+    createCode("<img src=\"images/avatar.jpeg\" width=\"200\" height=\"200\" alt=\"Peter\" style=\"border-radius: 50%;\">","");
     createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
     createText("My comfort zone lies primarily within the role of a product owner. I specialize in bridging the gap between business objectives and functional products. My project approach involves kicking off with comprehensive business intelligence and market analysis, and concluding with usage feedback and a performance dashboard.I facilitate no-nonsense software development as a product owner.")
     createText("Beyond my role as a Product Owner, I boast experience as a Trainer, a Researcher, and even as a hands-on coder, capable of crafting the necessary code to accomplish the task at hand.")
@@ -116,8 +144,9 @@ async function getInputValue(){
   }
   else if(value.toLowerCase() === "hello"){
     trueValue(value);
-    createText(" 👋🏻 Hi there! How are you doing? My name is Peter, I take on tech challenges")
-    createCode("","Here are the commands that you can use on this page:");
+    createCode("<div style=\"text-align: center;\">","<img src=\"images/avatar.jpeg\" width=\"100\" height=\"100\" alt=\"Peter\" style=\"border-radius: 50%;\">","</div>");    
+    createText(" 👋🏻 Hi there! How are you doing?")
+    createText("My name is Peter, I take on tech challenges. Here are the commands that you can use on this page:");
     createCode("projects - For my latest projects", "");
     createCode("about - Me, in a nutshell", "");
     createCode("freelance - If you want me to come work for you", "");
