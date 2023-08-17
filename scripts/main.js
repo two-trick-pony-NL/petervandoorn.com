@@ -117,10 +117,10 @@ async function getInputValue(){
   else if(value.toLowerCase() === "freelance"){
     trueValue(value);
     createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
-    createText("I am most comfortable in the role of product owner. My expertise is what happens between business objective and working product. I start every project with a BI and market analysis and wrap up with user feedback, in the middle I fascilitate agile software development as product owner.")
-    createText("Next to Product Owner, I have experience as Trainer and doing research, or writing the code that is needed to get the job done.")
-    createText("I'm registered as freelancer at the Chamber of commerce under: 89010701. If you'd like to hire me for your project then reach out to scope out your project.")
-    createText("Type <i>projects</i> to see what projects I have worked on or type <i>contact</i> to get in touch")
+    createText("My comfort zone lies primarily within the role of a product owner. I specialize in bridging the gap between business objectives and functional products. My project approach involves kicking off with comprehensive business intelligence and market analysis, and concluding with invaluable user feedback. In the midst of it all, I facilitate agile software development as a dedicated product owner.")
+    createText("Beyond my role as a Product Owner, I boast experience as a Trainer, a Researcher, and even as a hands-on coder, capable of crafting the necessary code to accomplish the task at hand.")
+    createText("You can find me registered as a freelancer at the Chamber of Commerce under the number: 89010701. If you're interested in enlisting my services for your project, don't hesitate to get in touch to discuss the scope of your endeavor.")
+    createText("To view a list of projects I've been involved in, type <i>projects</i>. If you wish to establish contact, type <i>contact</i>.")
   }
   else if(value.toLowerCase() === "hello"){
     trueValue(value);
