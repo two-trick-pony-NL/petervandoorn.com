@@ -135,7 +135,7 @@ async function getInputValue(){
   }
   else if(value.toLowerCase() === "freelance" || value.toLowerCase() === "about") {
     trueValue(value);
-    createCode("<img src=\"images/avatar.jpeg\" width=\"200\" height=\"200\" alt=\"Peter\" style=\"border-radius: 50%;\">","");
+    createCode("<div style=\"text-align: center;\">","<img src=\"images/avatar.jpeg\" width=\"200\" height=\"200\" alt=\"Peter\" style=\"border-radius: 50%;\">","</div>");    
     createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
     createText("My comfort zone lies primarily within the role of a product owner. I specialize in bridging the gap between business objectives and functional products. My project approach involves kicking off with comprehensive business case and concluding with usage feedback and a performance dashboard.I facilitate no-nonsense software development as a product owner.")
     createText("Beyond my role as a Product Owner, I have experience as a trainer and even as a hands-on coder (Python and React Native), capable of crafting the code to accomplish the task at hand.")
@@ -144,7 +144,7 @@ async function getInputValue(){
   }
   else if(value.toLowerCase() === "hello"){
     trueValue(value);
-    createCode("<div style=\"text-align: center;\">","<img src=\"images/avatar.jpeg\" width=\"100\" height=\"100\" alt=\"Peter\" style=\"border-radius: 50%;\">","</div>");    
+    createCode("<div style=\"text-align: center;\">","<img src=\"images/avatar.jpeg\" width=\"200\" height=\"200\" alt=\"Peter\" style=\"border-radius: 50%;\">","</div>");    
     createText(" 👋🏻 Hi there! How are you doing?")
     createText("My name is Peter, I take on tech challenges. Here are the commands that you can use on this page:");
     createCode("projects - For my latest projects", "");
