@@ -106,22 +106,13 @@ async function getInputValue(){
     createCode("<hr><br>Lucevankempen.com", "<br>I provided hosting for the webpage and email.<br><br> #wordpress");
     createCode("<hr><br>Github", "<br>Some of these projects are documented on my Github. Check it out: <a href='https://github.com/two-trick-pony-NL' target='_blank'> <i class='fab fa-github white'></i> https://github.com/two-trick-pony-NL</a>");
   }
-
-
-  else if(value.toLowerCase() === "about"){
-    trueValue(value);
-    createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
-    createText("I have over 5 years of experience as a product owner working for tech companies like bunq, Cybersprint and Friss while also doing Freelance work and helping friends and family with the tech-side of their passion projects. Over the last years I have specialised in UX/UI and user interface design, but any tech project goes really! I love data driven decision making as it levels most arguments. I code in python and am familiar with tools like:<br><br> <ul>Docker</ul> <ul>Wordpress</ul><ul>AWS</ul> <ul>Mixpanel</ul> <ul>Matomo</ul> <ul>Github</ul> <ul>Jira</ul> and many more")
-    createText("If you want to see some of my latest projects type: <i>projects</i>, or type <i>Freelance</i> if you want to work with me")
-    createText("Type <i>contact</i> to get in touch")
-  }
-  else if(value.toLowerCase() === "freelance"){
+  else if(value.toLowerCase() === "freelance" || value.toLowerCase() === "about") {
     trueValue(value);
     createText(" 👋🏻 Hi! my name is Peter, I take on tech challenges")
     createText("My comfort zone lies primarily within the role of a product owner. I specialize in bridging the gap between business objectives and functional products. My project approach involves kicking off with comprehensive business intelligence and market analysis, and concluding with invaluable user feedback. In the midst of it all, I facilitate agile software development as a dedicated product owner.")
     createText("Beyond my role as a Product Owner, I boast experience as a Trainer, a Researcher, and even as a hands-on coder, capable of crafting the necessary code to accomplish the task at hand.")
     createText("You can find me registered as a freelancer at the Chamber of Commerce under the number: 89010701. If you're interested in enlisting my services for your project, don't hesitate to get in touch to discuss the scope of your endeavor.")
-    createText("To view a list of projects I've been involved in, type <i>projects</i>. If you wish to establish contact, type <i>contact</i>.")
+    createText("To view a list of projects I've been involved in, type <i>projects</i>. If you wish to get in touch, type <i>contact</i>.")
   }
   else if(value.toLowerCase() === "hello"){
     trueValue(value);
