@@ -35,17 +35,21 @@ app.addEventListener("click", function(event){
 })
 
 
-async function open_terminal(){
-  createText("Welcome to petervandoorn.com <br> Last login: Thu Jun  2 14:54:22 on ttys000");
+async function open_terminal() {
+  const currentDate = new Date();
+  const formattedDate = currentDate.toDateString() + " " + currentDate.toLocaleTimeString();
+
+  createText("Welcome to petervandoorn.com <br> Last login: " + formattedDate);
   await delay(700);
   createText("");
   new_line();
-  autoType("Start typing  here to start exploring!");  
-  await delay(7000)
+  autoType("Start typing here to start exploring!");  
+  await delay(7000);
   autoType("try: ");
-  await delay(1500)
-  autoType("hello 👋🏻, about 👱🏼‍♂️, projects 🏗️, contact 📫, game 🕹️")
+  await delay(1500);
+  autoType("hello 👋🏻, about 👱🏼‍♂️, projects 🏗️, contact 📫, game 🕹️");
 }
+
 
 
 function new_line(){
