@@ -165,6 +165,7 @@ async function getInputValue(){
     createText("<i class='fas fa-envelope white'></i> freelance@petervandoorn.com")
     createText("<i class='fas fa-phone white'></i> +316 10468353")
     createText("<a href='https://github.com/two-trick-pony-NL' target='_blank'><i class='fab fa-github white'></i> Github</a>")
+    createText("<a href='https://calendly.com/petervandoorn/meetup' target='_blank'><i class='fa-regular fa-comments' style='color: #ffffff;'></i> Book Meeting</a>");
     createText("<a href='https://www.linkedin.com/in/petervdoorn/' target='_blank'><i class='fab fa-linkedin-in white'></i> LinkedIn</a>")
     createText("<a href='https://petervandoorn.vercel.app/' target='_blank'><i class='fas fa-newspaper white'></i> Blog</a>")
     createText("<i class='fas fa-building white'></i> KvK number is: 89010701")
