@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap"
+   rel="stylesheet">
+  <link href="styles/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez1qoq0e7CO+sy1Qb8L+xp7tbz9e7ZOEPGrQIaXIWgfcXn3RW7QCK4flQ4xswg8f" crossorigin="anonymous">
+
+  
+  <!-- HTML Meta Tags -->
+  <title>Portfolio Peter van Doorn</title>
+  <style>
+    .meetbutton {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: dodgerblue;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .meetbutton:hover {
+      background-color: #87CEEB; /* Lighter shade of blue on hover */
+    }
+    .accordion {
+      display: inline-block;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 10px;
+      border: 1px solid dodgerblue;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 10px;
+    }
+
+    .accordion:hover {
+      background-color: #f5f5f5;
+    }
+    .copyright {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: lightgrey;
+      font-size: 12px;
+    }
+  </style>
+  <meta name="description" content="Get in touch to start building your next tech product.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="http://petervandoorn.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio Peter van Doorn">
+  <meta property="og:description" content="Get in touch to start building your next tech product.">
+  <meta property="og:image" content="http://petervandoorn.com/logo.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="petervandoorn.com">
+  <meta property="twitter:url" content="http://petervandoorn.com">
+  <meta name="twitter:title" content="Portfolio Peter van Doorn">
+  <meta name="twitter:description" content="Get in touch to start building your next tech product.">
+  <meta name="twitter:image" content="http://petervandoorn.com/logo.png">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+  <title> >_ petervandoorn.com</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Matomo -->
+    <script>
+
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['setCustomDimension', 1, customerid]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//www.petervandoorn.com/matomo/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script><!-- End Matomo Code -->
+  <!-- Clarity --><script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "acpgr9y8s0");
+  </script><!-- End Clarity Code -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34854519-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-34854519-1');
+  </script>
+</head>
+<body>
+  <div style="text-align: center;" >
+    <a href='https://petervandoorn.com'>
+      <img src="logo.png" style="text-align: center; padding-left: 10;"" width="400px"  alt="Logo">
+   </a>
+     <div style="align-items: stretch; text-align: center;" style="color: black;">
+    <a href='mailto:peter@petervandoorn.com' target='_blank'style="color: black; padding: 10px " class='fas fa-envelope black fa-2x'></a>       
+    <a href='https://github.com/two-trick-pony-NL' style="color: black; padding: 10px" target='_blank'><i class='fab fa-github black fa-2x'></i></a>    
+    <a href='https://www.linkedin.com/in/petervdoorn/' style="color: black; padding: 10px" target='_blank'><i class='fab fa-linkedin-in black fa-2x'></i></a>
+    
+
+  
+    <!--<p style="color: black;">BTW: </p>-->
+  </div>
+   <a href="https://calendly.com/petervandoorn/meetup" class="meetbutton">Schedule chat 💬</a>
+   <br><br>
+  <div class="accordion" onclick="toggleAccordion('info1')">
+    <div style="color: black;">Company details 💼</div>
+    <div id="info1" class="accordion-content">
+      <div style="color: black;">KvK: 89010701</div>
+      <div style="color: black;">BTW: NL004682319B76</div>
+      <div style="color: black;">Tel: +316 10468353</div>
+      <div style="color: black;">Mail: hello@petervandoorn.com</div>
+    </div>
+  </div>
+
+  <script>
+    function toggleAccordion(id) {
+      var content = document.getElementById(id);
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    }
+  </script>
+  </div>
+  <div class="container">
+    <div class="menu">
+      <div class="buttons-flex">
+      <div class="button red"></div>
+      <div class="button yellow"></div>
+      <div class="button green"></div>
+    </div>
+    <div class="title">
+      <a href="https://petervandoorn.com" target="_blank"><h1> >_ ~ Homepage - petervandoorn.com</h1></a>
+    </div>
+    </div>
+    <div id="app">
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>  
+  <div class="copyright">
+    &copy; 2023 Peter van Doorn. All rights reserved.
+  </div>
+</body>
+
+</html>
