@@ -36,6 +36,9 @@ app.addEventListener("click", function(event){
 
 
 async function open_terminal() {
+
+
+  // Display the welcome message with IP address
   const currentDate = new Date();
   const formattedDate = currentDate.toDateString() + " " + currentDate.toLocaleTimeString();
 
@@ -53,7 +56,7 @@ async function open_terminal() {
 
 
 function new_line(){
-  
+    
   const p = document.createElement("p");
   const span1 = document.createElement("span");
   const span2 = document.createElement("span");
